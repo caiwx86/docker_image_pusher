@@ -6,7 +6,7 @@ gotson/komga
 linuxserver/jellyfin
 jxxghp/moviepilot
 xhofe/alist
-linuxserver/transmission
+lscr.io/linuxserver/transmission
 estrellaxd/auto_bangumi
 gitea/gitea
 authelia/authelia
