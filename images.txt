@@ -28,4 +28,8 @@ ghcr.io/ajnart/homarr:latest
 allanpk716/chinesesubfinder
 etherpad/etherpad
 postgres:15
+jlesage/nginx-proxy-manager
+mzz2017/v2raya
+metatube/metatube-server
+kopia/kopia
 minio/minio
