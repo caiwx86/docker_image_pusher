@@ -24,4 +24,5 @@ linuxserver/syncthing
 zadam/trilium
 vaultwarden/server
 johngong/baidunetdisk
+ghcr.io/ajnart/homarr:latest
 minio/minio
