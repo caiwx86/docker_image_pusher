@@ -25,4 +25,5 @@ zadam/trilium
 vaultwarden/server
 johngong/baidunetdisk
 ghcr.io/ajnart/homarr:latest
+allanpk716/chinesesubfinder
 minio/minio
