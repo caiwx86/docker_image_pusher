@@ -23,4 +23,5 @@ nevinee/qbittorrent:latest-iyuu
 linuxserver/syncthing
 zadam/trilium
 vaultwarden/server
+johngong/baidunetdisk
 minio/minio
