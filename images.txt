@@ -26,4 +26,5 @@ vaultwarden/server
 johngong/baidunetdisk
 ghcr.io/ajnart/homarr:latest
 allanpk716/chinesesubfinder
+etherpad/etherpad
 minio/minio
