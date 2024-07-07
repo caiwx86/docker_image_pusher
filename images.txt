@@ -5,7 +5,6 @@ amilys/embyserver:beta
 gotson/komga
 linuxserver/jellyfin
 jxxghp/moviepilot
-jxxghp/moviepilot:v1.9.3
 xhofe/alist
 lscr.io/linuxserver/transmission
 estrellaxd/auto_bangumi
