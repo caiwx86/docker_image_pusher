@@ -32,4 +32,5 @@ jlesage/nginx-proxy-manager
 mzz2017/v2raya
 metatube/metatube-server
 kopia/kopia
+linuxserver/mods:firefox-fonts
 minio/minio
