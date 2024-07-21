@@ -37,4 +37,6 @@ linuxserver/mods:firefox-fonts
 stainless403/mdcx-builtin-webtop-base
 outlinewiki/outline:latest
 bitnami/redis:latest
+ghcr.io/androidseb25/igotify-notification-assist:latest
+gotify/server
 minio/minio
