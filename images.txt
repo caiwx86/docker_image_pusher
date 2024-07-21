@@ -34,4 +34,6 @@ metatube/metatube-server
 kopia/kopia
 linuxserver/mods:firefox-fonts
 stainless403/mdcx-builtin-webtop-base
+outlinewiki/outline:latest
+bitnami/redis:latest
 minio/minio
