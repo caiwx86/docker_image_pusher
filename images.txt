@@ -40,4 +40,5 @@ bitnami/redis:latest
 ghcr.io/androidseb25/igotify-notification-assist:latest
 gotify/server
 fireflyiii/core:latest
+lscr.io/linuxserver/kavita
 minio/minio
