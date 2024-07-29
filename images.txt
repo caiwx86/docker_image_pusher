@@ -43,4 +43,5 @@ fireflyiii/core:latest
 lscr.io/linuxserver/kavita
 lscr.io/linuxserver/homeassistant
 lscr.io/linuxserver/wikijs
+iyuucn/iyuuplus
 minio/minio
