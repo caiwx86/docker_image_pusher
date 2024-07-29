@@ -21,6 +21,7 @@ traefik
 linuxserver/freshrss
 linuxserver/firefox
 nevinee/qbittorrent:latest-iyuu
+nevinee/qbittorrent:latest
 linuxserver/syncthing
 zadam/trilium
 vaultwarden/server
