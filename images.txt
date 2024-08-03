@@ -1,4 +1,5 @@
 alpine
+ddsderek/easyimage:latest
 kasmweb/nginx:1.25.3
 python:alpine3.19
 amilys/embyserver:beta
@@ -45,5 +46,4 @@ lscr.io/linuxserver/kavita
 lscr.io/linuxserver/homeassistant
 lscr.io/linuxserver/wikijs
 iyuucn/iyuuplus
-ddsderek/easyimage:latest
 minio/minio
