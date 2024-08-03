@@ -1,5 +1,6 @@
 alpine
-ddsderek/easyimage:latest
+--platform=linux/arm64 ddsderek/easyimage:latest
+--platform=linux/arm64 xiaoyaliu/alist:hostmode
 kasmweb/nginx:1.25.3
 python:alpine3.19
 amilys/embyserver:beta
@@ -21,7 +22,7 @@ diygod/rsshub:chromium-bundled
 traefik
 linuxserver/freshrss
 linuxserver/firefox
-nevinee/qbittorrent:latest-iyuu
+#nevinee/qbittorrent:latest-iyuu
 nevinee/qbittorrent:latest
 linuxserver/syncthing
 zadam/trilium
