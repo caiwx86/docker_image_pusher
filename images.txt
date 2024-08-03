@@ -1,6 +1,8 @@
 alpine
 --platform=linux/arm64 ddsderek/easyimage:latest
 --platform=linux/arm64 xiaoyaliu/alist:hostmode
+--platform=linux/amd64 gitea/gitea
+--platform=linux/arm64 gitea/gitea
 kasmweb/nginx:1.25.3
 python:alpine3.19
 amilys/embyserver:beta
@@ -11,7 +13,6 @@ jxxghp/moviepilot
 xhofe/alist
 lscr.io/linuxserver/transmission
 estrellaxd/auto_bangumi
-gitea/gitea
 authelia/authelia
 advplyr/audiobookshelf
 linuxserver/calibre
