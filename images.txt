@@ -45,4 +45,5 @@ lscr.io/linuxserver/kavita
 lscr.io/linuxserver/homeassistant
 lscr.io/linuxserver/wikijs
 iyuucn/iyuuplus
+ddsderek/easyimage:latest
 minio/minio
