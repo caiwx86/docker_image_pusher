@@ -40,6 +40,7 @@ metatube/metatube-server
 kopia/kopia
 linuxserver/mods:firefox-fonts
 stainless403/mdcx-builtin-webtop-base
+stainless403/mdcx-builtin-gui-base
 outlinewiki/outline:latest
 bitnami/redis:latest
 ghcr.io/androidseb25/igotify-notification-assist:latest
