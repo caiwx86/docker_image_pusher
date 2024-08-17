@@ -66,10 +66,15 @@ jobs:
         declare -A pushed_images 
         # 创建cache文件夹
         DATE=$(date +"%Y-%m-%d")
+        CACHE_FILE=".cache/$DATE"
         if [ ! -d ".cache" ]; then
             mkdir .cache
+        else
+        # 文件夹存在,但不存在当天缓存文件则对本文件夹内的文件进行清理
+            if [ ! -f "$CACHE_FILE" ]; then
+               rm -rfv .cache/*
+            fi
         fi
-        CACHE_FILE=".cache/$DATE"
         while IFS= read -r line || [ -n "$line" ]; do
             # 忽略空行与注释
             [[ -z "$line" ]] && continue
