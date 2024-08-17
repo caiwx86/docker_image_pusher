@@ -60,3 +60,5 @@ aronmarinelli/bitwarden-secure-sync:latest
 
 ollama/ollama
 lobehub/lobe-chat
+
+ghcr.io/open-webui/open-webui:main
