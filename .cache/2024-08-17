@@ -55,3 +55,5 @@ minio/minio
 p3terx/aria2-pro
 
 adminer
+
+resilio/sync:latest --name=resiliosync
