@@ -57,3 +57,6 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
+
+ollama/ollama
+lobehub/lobe-chat
