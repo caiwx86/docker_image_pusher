@@ -156,7 +156,7 @@ jobs:
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
             
             # 重命名
-            if [[ -n "{rename}" ]]; then
+            if [[ -n "$rename" ]]; then
                 image_name_tag=${image_name_tag//$image_name/$rename}
             else
                 rename=$image_name 
