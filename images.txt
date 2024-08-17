@@ -4,6 +4,7 @@ tomsquest/docker-radicale
 adminer
 resilio/sync:latest --name=resiliosync
 triliumnext/notes:develop --name=triliumnext
+triliumnext/notes:sha256-b45c8c3345d528f1e1e4c8dd5216c889f929ecf7e7c9e2e3fff8bffd719de877 --name=triliumnext
 testdasi/grafana-unraid-stack:latest
 --platform=linux/arm64 ddsderek/easyimage:latest
 --platform=linux/arm64 xiaoyaliu/alist:hostmode
