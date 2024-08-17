@@ -63,6 +63,9 @@ jobs:
         # 数据预处理,判断镜像是否重名
         declare -A duplicate_images
         declare -A temp_map
+        # 创建cache文件夹
+        DATE=$(date +"%Y-%m-%d")
+        mkdir .cache
         while IFS= read -r line || [ -n "$line" ]; do
             # 忽略空行与注释
             [[ -z "$line" ]] && continue
@@ -122,6 +125,15 @@ jobs:
             if echo "$line" | grep -q '^\s*#'; then
                 continue
             fi
+            old_line=$line
+            # 判断缓存文件是否存在
+            if [ -f ".cache/$DATE" ]; then
+               cache_file=$(cat .cache/$DATE | grep "^$old_line")
+               # 存在缓存文件就跳过
+               if [[ -n $cache_file ]]; then
+                   continue 
+               fi
+            fi
             rename=""
             # 添加--name
             for x in $line
@@ -178,6 +190,8 @@ jobs:
             docker tag $image $new_image
             echo "docker push $new_image"
             docker push $new_image
+            # 保存已PUSH镜像，过期可根据特定条件进行跳过
+            echo $old_line >> .cache/$DATE
             echo "开始清理磁盘空间"
             echo "=============================================================================="
             df -hT
@@ -190,3 +204,9 @@ jobs:
             echo "=============================================================================="     
             
         done < images.txt
+
+    - name: Commit
+      uses: EndBug/add-and-commit@v9
+      with:
+          message: 'chore: update html cache'
+          add: './.cache'
