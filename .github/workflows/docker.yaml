@@ -85,7 +85,6 @@ jobs:
             fi
             # 添加--name
             rename=$(echo "$line" | awk -F'--name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
-            done
             if [[ -n "$rename" ]]; then
                line=${line//"--name="$rename/}
             fi
@@ -141,7 +140,6 @@ jobs:
             echo 镜像$old_line未缓存，开始pull...
             # 添加--name
             rename=$(echo "$line" | awk -F'--name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
-            done
             echo rename $rename
             if [[ -n "$rename" ]]; then
                line=${line//--name=$rename/}
