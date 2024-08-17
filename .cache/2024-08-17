@@ -63,3 +63,5 @@ aronmarinelli/bitwarden-secure-sync:latest
 triliumnext/notes:latest --name=triliumnext
 
 triliumnext/notes:develop --name=triliumnext
+
+triliumnext/notes:sha-bb2fa70 --name=triliumnext
