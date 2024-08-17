@@ -95,9 +95,6 @@ jobs:
             # 这里不要是空值影响判断
             name_space="${name_space}_"
             # 获取镜像名例如nginx
-            if [[ -n "$rename" ]]; then
-              image_name=$rename
-            fi
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
             echo "image_name: $image_name"
             
