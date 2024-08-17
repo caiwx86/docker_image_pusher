@@ -137,7 +137,7 @@ jobs:
                    continue
                fi
             fi
-            echo 缓存文件不存在，继续执行
+            echo 镜像$old_line未缓存，开始pull...
             rename=""
             # 添加--name
             for x in $line
