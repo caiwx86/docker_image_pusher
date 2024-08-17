@@ -137,6 +137,8 @@ jobs:
                if [[ -n $cache_temp ]]; then
                    echo 跳过镜像 $old_line
                    continue
+               else
+                   break 
                fi
             fi
             rename=""
