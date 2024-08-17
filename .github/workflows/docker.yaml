@@ -127,9 +127,10 @@ jobs:
             if echo "$line" | grep -q '^\s*#'; then
                 continue
             fi
+            old_line=$line
             # 判断缓存文件是否存在
             if [ -f $CACHE_FILE ]; then
-               cache_temp=$(cat $CACHE_FILE | grep "^$line")
+               cache_temp=$(cat $CACHE_FILE | grep "^$old_line")
                # 存在缓存文件就跳过
                if [[ -n $cache_temp ]]; then
                    continue 
@@ -192,7 +193,7 @@ jobs:
             echo "docker push $new_image"
             docker push $new_image
             # 成功添加
-            pushed_images+=",$line"
+            pushed_images+=",$old_line"
             echo pushed_image= $pushed_images
             echo "开始清理磁盘空间"
             echo "=============================================================================="

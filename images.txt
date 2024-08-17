@@ -27,10 +27,8 @@ diygod/rsshub:chromium-bundled
 traefik
 linuxserver/freshrss
 linuxserver/firefox
-#nevinee/qbittorrent:latest-iyuu
 nevinee/qbittorrent:latest
 linuxserver/syncthing
-zadam/trilium
 vaultwarden/server --name=vaultwarden
 johngong/baidunetdisk
 ghcr.io/ajnart/homarr:latest
@@ -41,14 +39,13 @@ jlesage/nginx-proxy-manager
 mzz2017/v2raya
 metatube/metatube-server
 kopia/kopia
-linuxserver/mods:firefox-fonts
-stainless403/mdcx-builtin-webtop-base
+# stainless403/mdcx-builtin-webtop-base
 stainless403/mdcx-builtin-gui-base
 outlinewiki/outline:latest
 bitnami/redis:latest
 ghcr.io/androidseb25/igotify-notification-assist:latest
 gotify/server --name=gotify
-fireflyiii/core:latest
+fireflyiii/core:latest --name=fireflyiii
 lscr.io/linuxserver/kavita
 lscr.io/linuxserver/homeassistant
 lscr.io/linuxserver/wikijs
