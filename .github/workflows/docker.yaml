@@ -69,6 +69,7 @@ jobs:
             if echo "$line" | grep -q '^\s*#'; then
                 continue
             fi
+            rename=""
             for x in $line
             # 添加--name
             do
@@ -118,6 +119,7 @@ jobs:
             if echo "$line" | grep -q '^\s*#'; then
                 continue
             fi
+            rename=""
             # 添加--name
             for x in $line
             do
