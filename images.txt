@@ -1,7 +1,7 @@
 alpine
 xhongc/music_tag_web
 tomsquest/docker-radicale
-triliumnext/notes:latest
+triliumnext/notes:develop
 testdasi/grafana-unraid-stack:latest
 --platform=linux/arm64 ddsderek/easyimage:latest
 --platform=linux/arm64 xiaoyaliu/alist:hostmode
