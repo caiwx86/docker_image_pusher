@@ -86,7 +86,7 @@ jobs:
             # 添加--name
             rename=$(echo "$line" | awk -F'--name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
             done
-            if [[ -n "$rename" ]]; then
+            if [[ -n "$rename" || "$rename" != " " ]]; then
                line=${line//$prefix"="$rename/}
             fi
 
@@ -105,7 +105,7 @@ jobs:
             name_space="${name_space}_"
             # 获取镜像名例如nginx
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
-            if [[ -n "$rename" ]]; then
+            if [[ -n "$rename" || "$rename" != " " ]]; then
                image_name=$rename    
             fi
             echo "image_name: $image_name"
@@ -141,7 +141,7 @@ jobs:
             echo 镜像$old_line未缓存，开始pull...
             # 添加--name
             rename=$(echo "$line" | awk -F'--name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
-            if [[ -n "$rename" ]]; then
+            if [[ -n "$rename" || "$rename" != " " ]]; then
               line=${line//$prefix"="$rename/}
             fi
             echo "docker pull $line"
@@ -166,7 +166,7 @@ jobs:
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
             
             # 重命名
-            if [[ -n "$rename" ]]; then
+            if [[ -n "$rename" || "$rename" != " " ]]; then
                 image_name_tag=${image_name_tag//$image_name/$rename}
             else
                 rename=$image_name 
