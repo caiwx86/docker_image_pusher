@@ -19,6 +19,7 @@ estrellaxd/auto_bangumi
 authelia/authelia
 advplyr/audiobookshelf
 linuxserver/calibre
+lscr.io/linuxserver/calibre-web:latest
 hectorqin/reader
 linuxserver/code-server
 deluan/navidrome
