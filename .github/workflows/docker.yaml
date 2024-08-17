@@ -200,7 +200,9 @@ jobs:
             echo "=============================================================================="
             df -hT
             echo "=============================================================================="     
-            touch ${CACHE_FILE}
+            if [ ! -f $CACHE_FILE ];then
+                touch $CACHE_FILE
+            fi
             echo ${line} >> ${CACHE_FILE}
             
         done < images.txt
