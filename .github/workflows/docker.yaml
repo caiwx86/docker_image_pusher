@@ -192,7 +192,7 @@ jobs:
             echo "docker push $new_image"
             docker push $new_image
             # 保存已PUSH镜像，过期可根据特定条件进行跳过
-            echo $old_line >> $CACHE_FILE 
+            # echo $old_line >> $CACHE_FILE 
             echo "开始清理磁盘空间"
             echo "=============================================================================="
             df -hT
@@ -205,3 +205,9 @@ jobs:
             echo "=============================================================================="     
             
         done < images.txt
+
+    - name: Commit
+      uses: EndBug/add-and-commit@v9
+      with:
+        message: 'chore: update html cache'
+        add: './.cache'
