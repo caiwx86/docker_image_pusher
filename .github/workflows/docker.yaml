@@ -209,5 +209,5 @@ jobs:
     - name: Commit
       uses: EndBug/add-and-commit@v9
       with:
-          message: 'chore: update html cache'
-          add: './.cache'
+        message: 'chore: update html cache'
+        add: './.cache'
