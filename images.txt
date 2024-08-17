@@ -33,7 +33,7 @@ linuxserver/firefox
 nevinee/qbittorrent:latest
 linuxserver/syncthing
 zadam/trilium
-vaultwarden/server
+vaultwarden/server --name=vaultwarden
 johngong/baidunetdisk
 ghcr.io/ajnart/homarr:latest
 allanpk716/chinesesubfinder
@@ -49,7 +49,7 @@ stainless403/mdcx-builtin-gui-base
 outlinewiki/outline:latest
 bitnami/redis:latest
 ghcr.io/androidseb25/igotify-notification-assist:latest
-gotify/server
+gotify/server --name=gotify
 fireflyiii/core:latest
 lscr.io/linuxserver/kavita
 lscr.io/linuxserver/homeassistant
