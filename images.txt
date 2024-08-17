@@ -5,6 +5,7 @@ adminer
 resilio/sync:latest --name=resiliosync
 triliumnext/notes:develop --name=triliumnext
 triliumnext/notes:latest --name=triliumnext
+triliumnext/notes:sha-bb2fa70 --name=triliumnext
 testdasi/grafana-unraid-stack:latest
 --platform=linux/arm64 ddsderek/easyimage:latest
 --platform=linux/arm64 xiaoyaliu/alist:hostmode
