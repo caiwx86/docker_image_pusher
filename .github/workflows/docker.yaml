@@ -135,8 +135,8 @@ jobs:
                cache_temp=$(cat $CACHE_FILE | grep "^$old_line")
                # 存在缓存文件就跳过
                if [[ -n $cache_temp ]]; then
-                   continue
                    echo 跳过镜像 $old_line
+                   continue
                fi
             fi
             rename=""
