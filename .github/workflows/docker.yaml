@@ -66,7 +66,9 @@ jobs:
         declare -A pushed_images 
         # 创建cache文件夹
         DATE=$(date +"%Y-%m-%d")
-        mkdir .cache
+        if [ ! -d ".cache" ]; then
+          mkdir .cache
+        fi
         CACHE_FILE=".cache/$DATE"
         while IFS= read -r line || [ -n "$line" ]; do
             # 忽略空行与注释
@@ -133,7 +135,8 @@ jobs:
                cache_temp=$(cat $CACHE_FILE | grep "^$old_line")
                # 存在缓存文件就跳过
                if [[ -n $cache_temp ]]; then
-                   continue 
+                   continue
+                   echo 跳过镜像 $old_line
                fi
             fi
             rename=""
