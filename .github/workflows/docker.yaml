@@ -84,10 +84,11 @@ jobs:
                 continue
             fi
             # 添加--name
-            rename=$(echo "$line" | awk -F'--name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
+            tag_name=--name
+            rename=$(echo "$line" | awk -F'$tag_name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
             done
-            if [[ -n "$rename" || "$rename" != " " ]]; then
-               line=${line//$prefix"="$rename/}
+            if [[ -n "$rename" ]]; then
+               line=${line//$tag_name"="$rename/}
             fi
 
             # 获取镜像的完整名称，例如kasmweb/nginx:1.25.3（命名空间/镜像名:版本号）
@@ -105,7 +106,7 @@ jobs:
             name_space="${name_space}_"
             # 获取镜像名例如nginx
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
-            if [[ -n "$rename" || "$rename" != " " ]]; then
+            if [[ -n "$rename" ]]; then
                image_name=$rename    
             fi
             echo "image_name: $image_name"
@@ -140,9 +141,10 @@ jobs:
             fi
             echo 镜像$old_line未缓存，开始pull...
             # 添加--name
-            rename=$(echo "$line" | awk -F'--name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
-            if [[ -n "$rename" || "$rename" != " " ]]; then
-              line=${line//$prefix"="$rename/}
+            rename=$(echo "$line" | awk -F'$tag_name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
+            done
+            if [[ -n "$rename" ]]; then
+               line=${line//$tag_name"="$rename/}
             fi
             echo "docker pull $line"
             docker pull $line
@@ -166,7 +168,7 @@ jobs:
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
             
             # 重命名
-            if [[ -n "$rename" || "$rename" != " " ]]; then
+            if [[ -n "$rename" ]]; then
                 image_name_tag=${image_name_tag//$image_name/$rename}
             else
                 rename=$image_name 
