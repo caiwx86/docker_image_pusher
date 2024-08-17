@@ -193,6 +193,7 @@ jobs:
             docker push $new_image
             # 成功添加
             pushed_images+=",$line"
+            echo pushed_image= $pushed_images
             echo "开始清理磁盘空间"
             echo "=============================================================================="
             df -hT
