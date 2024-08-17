@@ -215,5 +215,5 @@ jobs:
     - name: Commit
       uses: EndBug/add-and-commit@v9
       with:
-        message: 'chore: update html cache'
+        message: 'cwx: add pushed images'
         add: './.cache'
