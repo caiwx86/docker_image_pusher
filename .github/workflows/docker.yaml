@@ -119,7 +119,7 @@ jobs:
             else
                 # 存镜像的命名空间
                 temp_map[$image_name]=$name_space
-            fi       
+            fi
         done < images.txt
         
         
@@ -129,6 +129,7 @@ jobs:
             if echo "$line" | grep -q '^\s*#'; then
                 continue
             fi
+            echo 判断缓存文件是否存在 
             old_line=$line
             # 判断缓存文件是否存在
             if [ -f $CACHE_FILE ]; then
