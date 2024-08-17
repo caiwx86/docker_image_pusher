@@ -1,4 +1,3 @@
-alpine
 xhongc/music_tag_web:latest
 tomsquest/docker-radicale
 triliumnext/notes:develop
