@@ -86,7 +86,7 @@ jobs:
             # 添加--name
             rename=$(echo "$line" | awk -F'--name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
             if [[ -n "$rename" ]]; then
-               line=${line//"--name="$rename/}
+               line=${line//--name=$rename/}
             fi
             # 获取镜像的完整名称，例如kasmweb/nginx:1.25.3（命名空间/镜像名:版本号）
             image=$(echo "$line" | awk '{print $NF}')
