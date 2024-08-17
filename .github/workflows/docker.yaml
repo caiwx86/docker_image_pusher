@@ -137,10 +137,9 @@ jobs:
                if [[ -n $cache_temp ]]; then
                    echo 跳过镜像 $old_line
                    continue
-               else
-                   break 
                fi
             fi
+            echo 缓存文件不存在，继续执行
             rename=""
             # 添加--name
             for x in $line
