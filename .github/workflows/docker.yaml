@@ -129,9 +129,9 @@ jobs:
             old_line=$line
             # 判断缓存文件是否存在
             if [ -f "$CACHE_FILE" ]; then
-               cache_file=$(cat "$CACHE_FILE" | grep "^$old_line")
+               cache_temp=$(cat "$CACHE_FILE" | grep "^$old_line")
                # 存在缓存文件就跳过
-               if [[ -n $cache_file ]]; then
+               if [[ -n $cache_temp ]]; then
                    continue 
                fi
             fi
