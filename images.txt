@@ -2,6 +2,7 @@ p3terx/aria2-pro
 xhongc/music_tag_web:latest
 tomsquest/docker-radicale
 adminer
+resilio/sync:latest --name=resiliosync
 triliumnext/notes:develop --name=triliumnext
 testdasi/grafana-unraid-stack:latest
 --platform=linux/arm64 ddsderek/easyimage:latest
