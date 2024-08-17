@@ -127,8 +127,8 @@ jobs:
             fi
             old_line=$line
             # 判断缓存文件是否存在
-            if [ -f ".cache/$DATE" ]; then
-               cache_file=$(cat .cache/$DATE | grep "^$old_line")
+            if [ -f ".cache/$DATE_docker" ]; then
+               cache_file=$(cat .cache/$DATE_docker | grep "^$old_line")
                # 存在缓存文件就跳过
                if [[ -n $cache_file ]]; then
                    continue 
@@ -191,7 +191,7 @@ jobs:
             echo "docker push $new_image"
             docker push $new_image
             # 保存已PUSH镜像，过期可根据特定条件进行跳过
-            echo $old_line >> .cache/$DATE
+            echo $old_line >> .cache/$DATE_docker
             echo "开始清理磁盘空间"
             echo "=============================================================================="
             df -hT
