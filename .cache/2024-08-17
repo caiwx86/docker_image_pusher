@@ -57,3 +57,6 @@ p3terx/aria2-pro
 adminer
 
 resilio/sync:latest --name=resiliosync
+
+80x86/filebrowser
+aronmarinelli/bitwarden-secure-sync:latest
