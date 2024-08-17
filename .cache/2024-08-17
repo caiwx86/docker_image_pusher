@@ -60,3 +60,5 @@ resilio/sync:latest --name=resiliosync
 
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
+
+triliumnext/notes:latest --name=triliumnext
