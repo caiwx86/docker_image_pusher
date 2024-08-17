@@ -134,8 +134,9 @@ jobs:
             # 判断缓存文件是否存在
             if [ -f $CACHE_FILE ]; then
                echo 缓存文件存在继续
-               cache_temp=$(cat $CACHE_FILE | grep "^$old_line")
+               cache_temp=$(cat "$CACHE_FILE" | grep "^$old_line")
                # 存在缓存文件就跳过
+               echo 开始判断是否跳过pushed镜像
                if [[ -n $cache_temp ]]; then
                    echo 跳过镜像 $old_line
                    continue
