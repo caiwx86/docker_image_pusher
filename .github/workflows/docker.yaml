@@ -191,8 +191,6 @@ jobs:
             docker tag $image $new_image
             echo "docker push $new_image"
             docker push $new_image
-            # 保存已PUSH镜像，过期可根据特定条件进行跳过
-            echo "$old_line">>"$CACHE_FILE" 
             echo "开始清理磁盘空间"
             echo "=============================================================================="
             df -hT
@@ -205,7 +203,8 @@ jobs:
             echo "=============================================================================="     
             
         done < images.txt
-
+        
+        cp -rv images.txt $CACHE_FILE
     - name: Commit
       uses: EndBug/add-and-commit@v9
       with:
