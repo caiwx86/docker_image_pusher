@@ -63,6 +63,7 @@ jobs:
         # 数据预处理,判断镜像是否重名
         declare -A duplicate_images
         declare -A temp_map
+        declare -A pushed_images 
         # 创建cache文件夹
         DATE=$(date +"%Y-%m-%d")
         mkdir .cache
@@ -190,6 +191,8 @@ jobs:
             docker tag $image $new_image
             echo "docker push $new_image"
             docker push $new_image
+            # 成功添加
+            pushed_images+=",$line"
             echo "开始清理磁盘空间"
             echo "=============================================================================="
             df -hT
@@ -200,9 +203,13 @@ jobs:
             echo "=============================================================================="
             df -hT
             echo "=============================================================================="     
-            echo $line >> $DATE_cache
             
         done < images.txt
+        
+        # 添加pushed
+        delimiter=","
+        echo $pushed_images | awk -F"$delimiter" '{for(i=1; i<=NF; i++) print $i}' >> $CACHE_FILE 
+
     - name: Commit
       uses: EndBug/add-and-commit@v9
       with:
