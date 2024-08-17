@@ -201,10 +201,9 @@ jobs:
             echo "=============================================================================="
             df -hT
             echo "=============================================================================="     
+            echo $old_line >> $CACHE_FILE
             
         done < images.txt
-        
-        cp -rv images.txt $CACHE_FILE
     - name: Commit
       uses: EndBug/add-and-commit@v9
       with:
