@@ -200,10 +200,7 @@ jobs:
             echo "=============================================================================="
             df -hT
             echo "=============================================================================="     
-            if [ ! -f $CACHE_FILE ];then
-                touch $CACHE_FILE
-            fi
-            echo ${line} >> ${CACHE_FILE}
+            echo $line >> $DATE_cache
             
         done < images.txt
     - name: Commit
