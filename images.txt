@@ -1,5 +1,6 @@
 ollama/ollama
 lobehub/lobe-chat
+ghcr.io/open-webui/open-webui:main
 p3terx/aria2-pro
 xhongc/music_tag_web:latest
 tomsquest/docker-radicale
