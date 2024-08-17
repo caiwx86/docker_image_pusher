@@ -61,3 +61,5 @@ resilio/sync:latest --name=resiliosync
 aronmarinelli/bitwarden-secure-sync:latest
 
 triliumnext/notes:latest --name=triliumnext
+
+triliumnext/notes:develop --name=triliumnext
