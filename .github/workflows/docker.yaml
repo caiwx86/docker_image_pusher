@@ -72,10 +72,10 @@ jobs:
             for x in $line
             # 添加--name
             do
-                prefix="--name"
-                if [[ $x == $prefix* ]]; then
-                    rename=$(echo "$line" | awk -F'--name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
-                fi
+              prefix="--name"
+              if [[ $x == $prefix* ]]; then
+                 rename=$(echo "$line" | awk -F'--name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
+              fi
             done
             if [[ -n "$rename" ]]; then
                line=${line//$prefix"="$rename/}
@@ -122,13 +122,13 @@ jobs:
             # 添加--name
             for x in $line
             do
-                prefix="--name"
-                if [[ $x == $prefix* ]]; then
-                    rename=$(echo "$line" | awk -F'--name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
-                fi
+              prefix="--name"
+              if [[ $x == $prefix* ]]; then
+                 rename=$(echo "$line" | awk -F'--name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
+              fi
             done
             if [[ -n "$rename" ]]; then
-               line=${line//$prefix"="$rename/}
+              line=${line//$prefix"="$rename/}
             fi
             echo "docker pull $line"
             docker pull $line
