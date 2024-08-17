@@ -12,6 +12,18 @@ B站，抖音，Youtube全网同名，转载请注明作者<br>
 
 ## 使用方式
 
+### 快速了解
+在原作者基础上添加了如下功能：
+ 1. 指定镜像名称  --name
+ 2. 当天内第二次更新将自动跳过当天已更新镜像（避免push时间过久)
+
+```bash
+--platform=linux/arm64 gitea/gitea --name=gitea
+```
+```text
+  --platform 指定架构 --name指定名称 
+```
+
 
 ### 配置阿里云
 登录阿里云容器镜像服务<br>
