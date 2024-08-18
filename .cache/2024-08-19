@@ -1,4 +1,7 @@
 
+ollama/ollama
+lobehub/lobe-chat
+ghcr.io/open-webui/open-webui:main
 p3terx/aria2-pro
 xhongc/music_tag_web:latest
 tomsquest/docker-radicale
@@ -57,8 +60,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-ollama/ollama
-lobehub/lobe-chat
-
-ghcr.io/open-webui/open-webui:main
