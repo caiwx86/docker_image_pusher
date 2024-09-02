@@ -1,4 +1,5 @@
 ollama/ollama
+linuxserver/heimdall
 lobehub/lobe-chat
 ghcr.io/open-webui/open-webui:main
 p3terx/aria2-pro
