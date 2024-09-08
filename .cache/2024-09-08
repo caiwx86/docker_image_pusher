@@ -59,3 +59,6 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
+
+triliumnext/notes:develop --name=triliumnext
+triliumnext/notes:latest --name=triliumnext
