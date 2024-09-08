@@ -8,6 +8,8 @@ xhongc/music_tag_web:latest
 tomsquest/docker-radicale
 adminer
 resilio/sync:latest --name=resiliosync
+triliumnext/notes:develop --name=triliumnext
+triliumnext/notes:latest --name=triliumnext
 testdasi/grafana-unraid-stack:latest
 --platform=linux/arm64 ddsderek/easyimage:latest
 --platform=linux/arm64 xiaoyaliu/alist:hostmode
@@ -59,6 +61,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-triliumnext/notes:develop --name=triliumnext
-triliumnext/notes:latest --name=triliumnext
