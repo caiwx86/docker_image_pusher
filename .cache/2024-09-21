@@ -63,3 +63,5 @@ minio/minio
 aronmarinelli/bitwarden-secure-sync:latest
 
 portainer/portainer:latest
+
+--platform=linux/arm64 portainer/portainer:latest
