@@ -1,5 +1,6 @@
 
 ollama/ollama
+--platform=linux/arm64 portainer/portainer:latest
 linuxserver/heimdall
 lobehub/lobe-chat
 ghcr.io/open-webui/open-webui:main
@@ -61,7 +62,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-portainer/portainer:latest
-
---platform=linux/arm64 portainer/portainer:latest
