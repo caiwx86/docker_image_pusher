@@ -1,7 +1,6 @@
 
 ollama/ollama
 yisier1/nps:latest
---platform=linux/arm64 portainer/portainer:latest
 linuxserver/heimdall
 lobehub/lobe-chat
 ghcr.io/open-webui/open-webui:main
