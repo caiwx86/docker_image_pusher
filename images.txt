@@ -24,6 +24,7 @@ amilys/embyserver:latest
 gotson/komga
 linuxserver/jellyfin
 jxxghp/moviepilot
+jxxghp/moviepilot-v2
 xhofe/alist
 lscr.io/linuxserver/transmission
 estrellaxd/auto_bangumi
