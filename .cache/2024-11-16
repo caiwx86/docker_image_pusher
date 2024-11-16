@@ -64,3 +64,5 @@ minio/minio
 aronmarinelli/bitwarden-secure-sync:latest
 
 hslr/sun-panel:latest
+
+ghcr.io/idmedia/hass-unraid:latest
