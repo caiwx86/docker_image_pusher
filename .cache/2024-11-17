@@ -1,6 +1,8 @@
 
 ollama/ollama
 yisier1/nps:latest
+ghcr.io/idmedia/hass-unraid:latest
+hslr/sun-panel:latest
 linuxserver/heimdall
 lobehub/lobe-chat
 ghcr.io/open-webui/open-webui:main
@@ -23,6 +25,7 @@ amilys/embyserver:latest
 gotson/komga
 linuxserver/jellyfin
 jxxghp/moviepilot
+jxxghp/moviepilot-v2
 xhofe/alist
 lscr.io/linuxserver/transmission
 estrellaxd/auto_bangumi
@@ -62,9 +65,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-hslr/sun-panel:latest
-
-ghcr.io/idmedia/hass-unraid:latest
-
-jxxghp/moviepilot-v2
