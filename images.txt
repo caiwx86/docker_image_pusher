@@ -42,6 +42,7 @@ traefik
 --platform=linux/arm64 traefik
 linuxserver/freshrss
 linuxserver/firefox
+--platform=linux/arm64 linuxserver/firefox
 nevinee/qbittorrent:latest
 linuxserver/syncthing
 vaultwarden/server --name=vaultwarden
