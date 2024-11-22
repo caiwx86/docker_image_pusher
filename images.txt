@@ -26,6 +26,7 @@ linuxserver/jellyfin
 jxxghp/moviepilot
 jxxghp/moviepilot-v2
 xhofe/alist
+tecnativa/docker-socket-proxy
 lscr.io/linuxserver/transmission
 estrellaxd/auto_bangumi
 authelia/authelia
