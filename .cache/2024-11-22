@@ -68,3 +68,5 @@ aronmarinelli/bitwarden-secure-sync:latest
 
 --platform=linux/arm64 authelia/authelia
 --platform=linux/arm64 traefik
+
+tecnativa/docker-socket-proxy
