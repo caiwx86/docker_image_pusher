@@ -29,6 +29,7 @@ xhofe/alist
 lscr.io/linuxserver/transmission
 estrellaxd/auto_bangumi
 authelia/authelia
+--platform=linux/arm64 authelia/authelia
 advplyr/audiobookshelf
 linuxserver/calibre
 lscr.io/linuxserver/calibre-web:latest
@@ -37,6 +38,7 @@ linuxserver/code-server
 deluan/navidrome
 diygod/rsshub:chromium-bundled
 traefik
+--platform=linux/arm64 traefik
 linuxserver/freshrss
 linuxserver/firefox
 nevinee/qbittorrent:latest
