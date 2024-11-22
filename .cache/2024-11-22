@@ -65,3 +65,6 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
+
+--platform=linux/arm64 authelia/authelia
+--platform=linux/arm64 traefik
