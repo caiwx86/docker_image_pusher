@@ -72,3 +72,5 @@ aronmarinelli/bitwarden-secure-sync:latest
 
 jlesage/firefox
 --platform=linux/arm64 jlesage/firefox
+
+lscr.io/linuxserver/obsidian
