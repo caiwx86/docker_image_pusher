@@ -9,6 +9,7 @@ p3terx/aria2-pro
 xhongc/music_tag_web:latest
 tomsquest/docker-radicale
 adminer
+lscr.io/linuxserver/obsidian
 resilio/sync:latest --name=resiliosync
 triliumnext/notes:develop --name=triliumnext
 triliumnext/notes:latest --name=triliumnext
