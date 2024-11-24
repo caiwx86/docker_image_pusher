@@ -10,6 +10,7 @@ p3terx/aria2-pro
 xhongc/music_tag_web:latest
 tomsquest/docker-radicale
 adminer
+lscr.io/linuxserver/obsidian
 resilio/sync:latest --name=resiliosync
 triliumnext/notes:develop --name=triliumnext
 triliumnext/notes:latest --name=triliumnext
@@ -42,8 +43,8 @@ diygod/rsshub:chromium-bundled
 traefik
 --platform=linux/arm64 traefik
 linuxserver/freshrss
-linuxserver/firefox
---platform=linux/arm64 linuxserver/firefox
+jlesage/firefox
+--platform=linux/arm64 jlesage/firefox
 nevinee/qbittorrent:latest
 linuxserver/syncthing
 vaultwarden/server --name=vaultwarden
@@ -69,8 +70,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-jlesage/firefox
---platform=linux/arm64 jlesage/firefox
-
-lscr.io/linuxserver/obsidian
