@@ -41,8 +41,8 @@ diygod/rsshub:chromium-bundled
 traefik
 --platform=linux/arm64 traefik
 linuxserver/freshrss
-linuxserver/firefox
---platform=linux/arm64 linuxserver/firefox
+jlesage/firefox
+--platform=linux/arm64 jlesage/firefox
 nevinee/qbittorrent:latest
 linuxserver/syncthing
 vaultwarden/server --name=vaultwarden
