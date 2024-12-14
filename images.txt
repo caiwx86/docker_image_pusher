@@ -1,5 +1,6 @@
 ollama/ollama
 yisier1/nps:latest
+ghcr.io/metowolf/vcards
 ghcr.io/idmedia/hass-unraid:latest
 hslr/sun-panel:latest
 linuxserver/heimdall
