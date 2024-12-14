@@ -1,6 +1,7 @@
 ollama/ollama
 yisier1/nps:latest
 ghcr.io/metowolf/vcards:1.0.0
+gotanaccount/obsidian-livesync
 ghcr.io/idmedia/hass-unraid:latest
 hslr/sun-panel:latest
 linuxserver/heimdall
