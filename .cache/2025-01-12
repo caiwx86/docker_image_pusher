@@ -1,5 +1,7 @@
 
 ollama/ollama
+ghcr.io/linkwarden/linkwarden
+ghcr.io/mealie-recipes/mealie:nightly
 yisier1/nps:latest
 ghcr.io/metowolf/vcards:1.0.0
 gotanaccount/obsidian-livesync
@@ -72,5 +74,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-ghcr.io/linkwarden/linkwarden
