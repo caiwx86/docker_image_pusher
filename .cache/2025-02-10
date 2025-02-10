@@ -76,3 +76,5 @@ minio/minio
 aronmarinelli/bitwarden-secure-sync:latest
 
 linuxserver/firefox
+
+lscr.io/linuxserver/firefox:latest
