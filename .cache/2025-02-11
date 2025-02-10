@@ -47,7 +47,7 @@ diygod/rsshub:chromium-bundled
 traefik
 --platform=linux/arm64 traefik
 linuxserver/freshrss
-jlesage/firefox
+lscr.io/linuxserver/firefox:latest
 --platform=linux/arm64 jlesage/firefox
 nevinee/qbittorrent:latest
 linuxserver/syncthing
@@ -74,7 +74,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-linuxserver/firefox
-
-lscr.io/linuxserver/firefox:latest
