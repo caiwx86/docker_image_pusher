@@ -47,7 +47,7 @@ traefik
 --platform=linux/arm64 traefik
 linuxserver/freshrss
 lscr.io/linuxserver/firefox:latest
-# --platform=linux/arm64 jlesage/firefox
+## --platform=linux/arm64 jlesage/firefox
 nevinee/qbittorrent:latest
 linuxserver/syncthing
 vaultwarden/server --name=vaultwarden
