@@ -1,4 +1,5 @@
 ollama/ollama
+wushuo894/ani-rss
 ghcr.io/linkwarden/linkwarden
 ghcr.io/mealie-recipes/mealie:nightly
 yisier1/nps:latest
