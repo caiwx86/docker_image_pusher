@@ -1,6 +1,8 @@
 
 ollama/ollama
 wushuo894/ani-rss
+riderlty/fontinass:latest
+riderlty/fontinass:noproxy
 ghcr.io/linkwarden/linkwarden
 ghcr.io/mealie-recipes/mealie:nightly
 yisier1/nps:latest
@@ -74,7 +76,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-riderlty/fontinass:latest
-
-riderlty/fontinass:noproxy
