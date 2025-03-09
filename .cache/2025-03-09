@@ -76,3 +76,5 @@ minio/minio
 aronmarinelli/bitwarden-secure-sync:latest
 
 riderlty/fontinass:latest
+
+riderlty/fontinass:noproxy
