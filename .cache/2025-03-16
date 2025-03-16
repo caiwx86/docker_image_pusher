@@ -76,3 +76,5 @@ aronmarinelli/bitwarden-secure-sync:latest
 
 amilys/embyserver:beta
 amilys/embyserver:latest
+
+ghcr.io/homarr-labs/homarr:latest
