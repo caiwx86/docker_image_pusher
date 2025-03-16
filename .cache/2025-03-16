@@ -53,7 +53,6 @@ nevinee/qbittorrent:latest
 linuxserver/syncthing
 vaultwarden/server --name=vaultwarden
 johngong/baidunetdisk
-ghcr.io/ajnart/homarr:latest
 allanpk716/chinesesubfinder
 etherpad/etherpad
 postgres:15
