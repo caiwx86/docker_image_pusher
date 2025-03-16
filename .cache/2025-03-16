@@ -28,8 +28,6 @@ testdasi/grafana-unraid-stack:latest
 --platform=linux/arm64 gitea/gitea
 kasmweb/nginx:1.25.3
 python:alpine3.19
-amilys/embyserver:beta
-amilys/embyserver:latest
 gotson/komga
 linuxserver/jellyfin
 jxxghp/moviepilot
