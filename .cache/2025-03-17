@@ -28,6 +28,8 @@ testdasi/grafana-unraid-stack:latest
 --platform=linux/arm64 gitea/gitea
 kasmweb/nginx:1.25.3
 python:alpine3.19
+amilys/embyserver:beta
+amilys/embyserver:latest
 gotson/komga
 linuxserver/jellyfin
 jxxghp/moviepilot
@@ -53,6 +55,7 @@ nevinee/qbittorrent:latest
 linuxserver/syncthing
 vaultwarden/server --name=vaultwarden
 johngong/baidunetdisk
+ghcr.io/homarr-labs/homarr:latest
 allanpk716/chinesesubfinder
 etherpad/etherpad
 postgres:15
@@ -73,8 +76,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-amilys/embyserver:beta
-amilys/embyserver:latest
-
-ghcr.io/homarr-labs/homarr:latest
