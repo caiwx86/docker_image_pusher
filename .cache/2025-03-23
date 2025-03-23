@@ -1,6 +1,8 @@
 
 ollama/ollama
 wushuo894/ani-rss
+riderlty/fontinass:latest
+riderlty/fontinass:noproxy
 ghcr.io/linkwarden/linkwarden
 ghcr.io/mealie-recipes/mealie:nightly
 yisier1/nps:latest
@@ -58,7 +60,8 @@ etherpad/etherpad
 postgres:15
 jlesage/nginx-proxy-manager
 mzz2017/v2raya
-metatube/metatube-server
+ghcr.io/metatube-community/metatube-server:dev
+ghcr.io/metatube-community/metatube-server:latest
 kopia/kopia
 stainless403/mdcx-builtin-gui-base
 outlinewiki/outline:latest
