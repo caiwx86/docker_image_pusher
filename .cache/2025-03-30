@@ -1,0 +1,78 @@
+
+ollama/ollama
+wushuo894/ani-rss
+riderlty/fontinass:latest
+riderlty/fontinass:noproxy
+ghcr.io/linkwarden/linkwarden
+ghcr.io/mealie-recipes/mealie:nightly
+yisier1/nps:latest
+ghcr.io/metowolf/vcards:1.0.0
+gotanaccount/obsidian-livesync
+ghcr.io/idmedia/hass-unraid:latest
+hslr/sun-panel:latest
+linuxserver/heimdall
+lobehub/lobe-chat
+ghcr.io/open-webui/open-webui:main
+p3terx/aria2-pro
+xhongc/music_tag_web:latest
+tomsquest/docker-radicale
+adminer
+lscr.io/linuxserver/obsidian
+resilio/sync:latest --name=resiliosync
+triliumnext/notes:develop --name=triliumnext
+triliumnext/notes:latest --name=triliumnext
+testdasi/grafana-unraid-stack:latest
+--platform=linux/arm64 ddsderek/easyimage:latest
+--platform=linux/arm64 xiaoyaliu/alist:hostmode
+--platform=linux/amd64 gitea/gitea
+--platform=linux/arm64 gitea/gitea
+kasmweb/nginx:1.25.3
+python:alpine3.19
+amilys/embyserver:latest
+gotson/komga
+linuxserver/jellyfin
+jxxghp/moviepilot
+jxxghp/moviepilot-v2
+xhofe/alist
+tecnativa/docker-socket-proxy
+lscr.io/linuxserver/transmission
+estrellaxd/auto_bangumi
+authelia/authelia
+--platform=linux/arm64 authelia/authelia
+advplyr/audiobookshelf
+linuxserver/calibre
+lscr.io/linuxserver/calibre-web:latest
+hectorqin/reader
+linuxserver/code-server
+deluan/navidrome
+diygod/rsshub:chromium-bundled
+traefik
+--platform=linux/arm64 traefik
+linuxserver/freshrss
+lscr.io/linuxserver/firefox:latest
+nevinee/qbittorrent:latest
+linuxserver/syncthing
+vaultwarden/server --name=vaultwarden
+johngong/baidunetdisk
+ghcr.io/homarr-labs/homarr:latest
+allanpk716/chinesesubfinder
+etherpad/etherpad
+postgres:15
+jlesage/nginx-proxy-manager
+mzz2017/v2raya
+ghcr.io/metatube-community/metatube-server:dev
+ghcr.io/metatube-community/metatube-server:latest
+kopia/kopia
+stainless403/mdcx-builtin-gui-base
+outlinewiki/outline:latest
+bitnami/redis:latest
+ghcr.io/androidseb25/igotify-notification-assist:latest
+gotify/server --name=gotify
+fireflyiii/core:latest --name=fireflyiii
+lscr.io/linuxserver/kavita
+lscr.io/linuxserver/homeassistant
+lscr.io/linuxserver/wikijs
+iyuucn/iyuuplus
+minio/minio
+80x86/filebrowser
+aronmarinelli/bitwarden-secure-sync:latest
