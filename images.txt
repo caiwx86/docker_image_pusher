@@ -4,7 +4,8 @@ riderlty/fontinass:latest
 riderlty/fontinass:noproxy
 ghcr.io/linkwarden/linkwarden
 ghcr.io/mealie-recipes/mealie:nightly
-yisier1/nps:latest
+duan2001/nps
+duan2001/npc
 ghcr.io/metowolf/vcards:1.0.0
 gotanaccount/obsidian-livesync
 ghcr.io/idmedia/hass-unraid:latest
