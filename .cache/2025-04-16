@@ -7,6 +7,8 @@ ghcr.io/linkwarden/linkwarden
 ghcr.io/mealie-recipes/mealie:nightly
 yisier1/nps
 yisier1/npc
+duan2001/npc --name=npc-new
+duan2001/nps --name=nps-new
 ghcr.io/metowolf/vcards:1.0.0
 gotanaccount/obsidian-livesync
 ghcr.io/idmedia/hass-unraid:latest
@@ -77,6 +79,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-duan2001/npc --name=npc-new
-duan2001/nps --name=nps-new
