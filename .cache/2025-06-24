@@ -81,3 +81,5 @@ minio/minio
 aronmarinelli/bitwarden-secure-sync:latest
 
 neosmemo/memos:latest
+
+neosmemo/memos:stable
