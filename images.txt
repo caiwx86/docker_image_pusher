@@ -1,5 +1,6 @@
 ollama/ollama
 wushuo894/ani-rss
+neosmemo/memos:latest
 riderlty/fontinass:latest
 riderlty/fontinass:noproxy
 ghcr.io/linkwarden/linkwarden
