@@ -1,6 +1,7 @@
 
 ollama/ollama
 wushuo894/ani-rss
+neosmemo/memos:stable
 riderlty/fontinass:latest
 riderlty/fontinass:noproxy
 ghcr.io/linkwarden/linkwarden
@@ -79,7 +80,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-neosmemo/memos:latest
-
-neosmemo/memos:stable
