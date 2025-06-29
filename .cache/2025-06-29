@@ -35,8 +35,6 @@ python:alpine3.19
 amilys/embyserver:latest
 gotson/komga
 linuxserver/jellyfin
-jxxghp/moviepilot
-jxxghp/moviepilot-v2
 xhofe/alist
 tecnativa/docker-socket-proxy
 lscr.io/linuxserver/transmission
