@@ -35,6 +35,8 @@ python:alpine3.19
 amilys/embyserver:latest
 gotson/komga
 linuxserver/jellyfin
+jxxghp/moviepilot
+jxxghp/moviepilot-v2
 xhofe/alist
 tecnativa/docker-socket-proxy
 lscr.io/linuxserver/transmission
@@ -78,6 +80,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-jxxghp/moviepilot
-jxxghp/moviepilot-v2
