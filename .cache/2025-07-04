@@ -54,6 +54,7 @@ traefik
 --platform=linux/arm64 traefik
 linuxserver/freshrss
 lscr.io/linuxserver/firefox:latest
+jlesage/firefox:latest --name=firefox-lite
 nevinee/qbittorrent:latest
 linuxserver/syncthing
 vaultwarden/server --name=vaultwarden
@@ -80,5 +81,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-jlesage/firefox:latest --name=firefox-lite
