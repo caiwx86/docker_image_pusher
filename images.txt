@@ -54,6 +54,7 @@ traefik
 --platform=linux/arm64 traefik
 linuxserver/freshrss
 lscr.io/linuxserver/firefox:latest
+lscr.io/linuxserver/firefox:kasm
 jlesage/firefox:latest --name=firefox-lite
 nevinee/qbittorrent:latest
 linuxserver/syncthing
