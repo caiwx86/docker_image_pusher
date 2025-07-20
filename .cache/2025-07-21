@@ -2,6 +2,7 @@
 ollama/ollama
 wushuo894/ani-rss
 neosmemo/memos:stable
+caiwx0806/netease-music-dl:latest
 riderlty/fontinass:latest
 riderlty/fontinass:noproxy
 ghcr.io/linkwarden/linkwarden
@@ -54,6 +55,7 @@ traefik
 --platform=linux/arm64 traefik
 linuxserver/freshrss
 lscr.io/linuxserver/firefox:latest
+lscr.io/linuxserver/firefox:kasm
 jlesage/firefox:latest --name=firefox-lite
 nevinee/qbittorrent:latest
 linuxserver/syncthing
@@ -81,9 +83,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-peweelive/netease-music-dl:latest
-
-caiwx0806/netease-music-dl:latest
-
-lscr.io/linuxserver/firefox:kasm
