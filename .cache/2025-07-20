@@ -83,3 +83,5 @@ minio/minio
 aronmarinelli/bitwarden-secure-sync:latest
 
 peweelive/netease-music-dl:latest
+
+caiwx0806/netease-music-dl:latest
