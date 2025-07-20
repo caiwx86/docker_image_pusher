@@ -1,7 +1,7 @@
 ollama/ollama
 wushuo894/ani-rss
 neosmemo/memos:stable
-peweelive/netease-music-dl:latest
+caiwx0806/netease-music-dl:latest
 riderlty/fontinass:latest
 riderlty/fontinass:noproxy
 ghcr.io/linkwarden/linkwarden
