@@ -24,8 +24,7 @@ tomsquest/docker-radicale
 adminer
 lscr.io/linuxserver/obsidian
 resilio/sync:latest --name=resiliosync
-triliumnext/notes:develop --name=triliumnext
-triliumnext/notes:latest --name=triliumnext
+triliumnext/trilium:latest --name=triliumnext
 testdasi/grafana-unraid-stack:latest
 --platform=linux/arm64 ddsderek/easyimage:latest
 --platform=linux/arm64 xiaoyaliu/alist:hostmode
@@ -83,6 +82,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-peweelive/netease-music-dl:latest
-triliumnext/trilium:latest --name=triliumnext
