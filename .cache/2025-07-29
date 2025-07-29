@@ -83,3 +83,6 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
+
+peweelive/netease-music-dl:latest
+triliumnext/trilium:latest --name=triliumnext
