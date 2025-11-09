@@ -31,6 +31,8 @@ testdasi/grafana-unraid-stack:latest
 --platform=linux/arm64 xiaoyaliu/alist:hostmode
 --platform=linux/amd64 gitea/gitea
 --platform=linux/arm64 gitea/gitea
+--platform=linux/arm64 whyour/qinglong:2
+--platform=linux/amd64 whyour/qinglong:2
 kasmweb/nginx:1.25.3
 python:alpine3.19
 amilys/embyserver:latest
@@ -83,6 +85,3 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
---platform=linux/arm64 whyour/qinglong:2
---platform=linux/amd64 whyour/qinglong:2
