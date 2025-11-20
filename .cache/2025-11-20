@@ -87,3 +87,5 @@ minio/minio
 aronmarinelli/bitwarden-secure-sync:latest
 
 rustfs/rustfs
+
+l429609201/misaka_danmu_server:latest
