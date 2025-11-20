@@ -1,4 +1,5 @@
 ollama/ollama
+rustfs/rustfs
 wushuo894/ani-rss
 neosmemo/memos:stable
 caiwx0806/netease-music-dl:latest
