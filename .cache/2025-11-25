@@ -87,3 +87,5 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
+
+lscr.io/linuxserver/chrome:latest
