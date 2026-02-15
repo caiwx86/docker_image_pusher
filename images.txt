@@ -1,4 +1,4 @@
-ollama/ollama
+# ollama/ollama
 rustfs/rustfs
 lscr.io/linuxserver/chrome:latest
 l429609201/misaka_danmu_server:latest
@@ -66,7 +66,6 @@ linuxserver/syncthing
 vaultwarden/server --name=vaultwarden
 johngong/baidunetdisk
 ghcr.io/homarr-labs/homarr:latest
-allanpk716/chinesesubfinder
 etherpad/etherpad
 postgres:15
 postgres:18
