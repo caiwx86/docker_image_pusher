@@ -69,6 +69,7 @@ ghcr.io/homarr-labs/homarr:latest
 allanpk716/chinesesubfinder
 etherpad/etherpad
 postgres:15
+postgres:18
 jlesage/nginx-proxy-manager
 mzz2017/v2raya
 ghcr.io/metatube-community/metatube-server:dev
