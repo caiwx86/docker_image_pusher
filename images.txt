@@ -1,5 +1,5 @@
 # ollama/ollama
-rustfs/rustfs
+# rustfs/rustfs
 lscr.io/linuxserver/chrome:latest
 l429609201/misaka_danmu_server:latest
 wushuo894/ani-rss
