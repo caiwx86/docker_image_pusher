@@ -93,3 +93,5 @@ vabene1111/recipes
 postgres:18
 
 wger/server:latest --name=wger_server
+
+nginx:latest --name=nginx
