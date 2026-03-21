@@ -3,6 +3,7 @@ ollama/ollama
 rustfs/rustfs
 lscr.io/linuxserver/chrome:latest
 l429609201/misaka_danmu_server:latest
+vabene1111/recipes
 wushuo894/ani-rss
 neosmemo/memos:stable
 caiwx0806/netease-music-dl:latest
@@ -69,6 +70,7 @@ ghcr.io/homarr-labs/homarr:latest
 allanpk716/chinesesubfinder
 etherpad/etherpad
 postgres:15
+postgres:18
 jlesage/nginx-proxy-manager
 mzz2017/v2raya
 ghcr.io/metatube-community/metatube-server:dev
@@ -87,11 +89,5 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
-
-vabene1111/recipes
-
-postgres:18
-
 wger/server:latest --name=wger_server
-
 nginx:latest --name=nginx
