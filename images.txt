@@ -93,3 +93,4 @@ minio/minio
 aronmarinelli/bitwarden-secure-sync:latest
 # wger
 wger/server:latest --name=wger_server
+nginx:latest --name=nginx
