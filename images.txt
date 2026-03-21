@@ -2,6 +2,7 @@ ollama/ollama
 rustfs/rustfs
 lscr.io/linuxserver/chrome:latest
 l429609201/misaka_danmu_server:latest
+vabene1111/recipes
 wushuo894/ani-rss
 neosmemo/memos:stable
 caiwx0806/netease-music-dl:latest
