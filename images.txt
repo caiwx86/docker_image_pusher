@@ -91,3 +91,5 @@ iyuucn/iyuuplus
 minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
+# wger
+wger/server:latest --name=wger_server
