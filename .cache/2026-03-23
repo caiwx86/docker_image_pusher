@@ -90,6 +90,4 @@ minio/minio
 80x86/filebrowser
 aronmarinelli/bitwarden-secure-sync:latest
 wger/server:latest --name=wger_server
-nginx:latest --name=nginx
-
 nginx:stable --name=nginx
