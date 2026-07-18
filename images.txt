@@ -1,4 +1,9 @@
 ollama/ollama
+evanqu/jellyfin-library-poster
+ghcr.io/sysadminsmedia/homebox:latest
+openlistteam/openlist:latest
+ghcr.io/selfhst/icons:latest
+ghcr.io/lukegus/termix:latest
 rustfs/rustfs
 lscr.io/linuxserver/chrome:latest
 l429609201/misaka_danmu_server:latest
