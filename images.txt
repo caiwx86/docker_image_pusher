@@ -54,7 +54,7 @@ authelia/authelia
 advplyr/audiobookshelf
 linuxserver/calibre
 lscr.io/linuxserver/calibre-web:latest
-hectorqin/reader
+mandarons/icloud-drive:latest
 linuxserver/code-server
 deluan/navidrome
 diygod/rsshub:chromium-bundled
