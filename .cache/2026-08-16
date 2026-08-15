@@ -39,8 +39,9 @@ triliumnext/trilium:latest --name=triliumnext
 testdasi/grafana-unraid-stack:latest
 --platform=linux/arm64 ddsderek/easyimage:latest
 --platform=linux/arm64 xiaoyaliu/alist:hostmode
---platform=linux/amd64 gitea/gitea
+gitea/gitea
 --platform=linux/arm64 gitea/gitea
+difegue/lanraragi:latest
 kasmweb/nginx:1.25.3
 python:alpine3.19
 amilys/embyserver:latest
@@ -97,5 +98,3 @@ minio/minio
 aronmarinelli/bitwarden-secure-sync:latest
 wger/server:latest --name=wger_server
 nginx:stable --name=nginx
-
-gitea/gitea
