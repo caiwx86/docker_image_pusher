@@ -38,7 +38,7 @@ triliumnext/trilium:latest --name=triliumnext
 testdasi/grafana-unraid-stack:latest
 --platform=linux/arm64 ddsderek/easyimage:latest
 --platform=linux/arm64 xiaoyaliu/alist:hostmode
---platform=linux/amd64 gitea/gitea
+gitea/gitea
 --platform=linux/arm64 gitea/gitea
 # --platform=linux/arm64 whyour/qinglong:2
 # --platform=linux/amd64 whyour/qinglong:2
