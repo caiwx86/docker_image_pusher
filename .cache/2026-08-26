@@ -22,6 +22,7 @@ yisier1/nps
 yisier1/npc
 duan2001/npc --name=npc-new
 duan2001/nps --name=nps-new
+joplin/server --name=joplin-server
 ghcr.io/metowolf/vcards:1.0.0
 gotanaccount/obsidian-livesync
 ghcr.io/idmedia/hass-unraid:latest
@@ -98,5 +99,3 @@ minio/minio
 aronmarinelli/bitwarden-secure-sync:latest
 wger/server:latest --name=wger_server
 nginx:stable --name=nginx
-
-joplin/server --name=joplin-server
