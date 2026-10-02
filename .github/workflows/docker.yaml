@@ -65,22 +65,28 @@ jobs:
         # 数据预处理,判断镜像是否重名
         declare -A duplicate_images
         declare -A temp_map
-        declare -A pushed_images 
         # 记录拉取/推送失败而被跳过的镜像
         failed_images=()
-        # 创建cache文件夹
-        DATE=$(TZ="Asia/Shanghai" date +"%Y-%m-%d")
-        echo DATE=$DATE
-        CACHE=".cache"
-        CACHE_FILE="$CACHE/$DATE"
-        if [ ! -d "$CACHE" ]; then
-            mkdir $CACHE 
-        else
-        # 文件夹存在,但不存在当天缓存文件则对本文件夹内的文件进行清理
-            if [ ! -f "$CACHE_FILE" ]; then
-               rm -rfv .cache/*
-            fi
-        fi
+
+        # ------------------------------------------------------------------
+        # 持久缓存：.cache/pushed.txt，每行格式为 "<远端digest> <images.txt中的原始行>"
+        # 不再按天清理；只有远端 digest 变化（镜像有更新）或从未推送过才会重新 pull
+        # ------------------------------------------------------------------
+        CACHE_DIR=".cache"
+        CACHE_FILE="$CACHE_DIR/pushed.txt"
+        mkdir -p "$CACHE_DIR"
+        touch "$CACHE_FILE"
+        # 清理旧版本按日期命名的缓存文件
+        find "$CACHE_DIR" -maxdepth 1 -type f -name '20??-??-??' -delete
+
+        declare -A cache_map      # 原始行 -> 已推送时的 digest
+        declare -A active_images  # 当前 images.txt 中存在的行（用于清理失效缓存）
+        while IFS= read -r c || [ -n "$c" ]; do
+            [[ -z "$c" ]] && continue
+            cache_map["${c#* }"]="${c%% *}"
+        done < "$CACHE_FILE"
+        echo "已加载缓存条目数: ${#cache_map[@]}"
+
         while IFS= read -r line || [ -n "$line" ]; do
             # 忽略空行与注释
             [[ -z "$line" ]] && continue
@@ -133,19 +139,31 @@ jobs:
                 continue
             fi
             old_line=$line
-            # 判断缓存文件是否存在 
-            if [ -f $CACHE_FILE ]; then
-               if [[ -n $(cat "$CACHE_FILE" | grep "^$old_line") ]]; then
-                   echo 跳过镜像 $old_line
-                   continue
-               fi
-            fi
-            echo 镜像$old_line未缓存，开始pull...
+            active_images["$old_line"]=1
             # 添加--name
             rename=$(echo "$line" | awk -F'--name[ =]' '{if (NF>1) print $2}' |  awk '{print $1}')
             if [[ -n "$rename" ]]; then
                line=${line//--name=$rename/}
             fi
+
+            # ---------------- 缓存判断：不下载镜像层，只查询远端 digest ----------------
+            image_ref=$(echo "$line" | awk '{print $NF}')
+            remote_digest=$(docker buildx imagetools inspect "$image_ref" --format '{{.Manifest.Digest}}' 2>/dev/null || true)
+            cached_digest="${cache_map[$old_line]}"
+            if [[ -n "$cached_digest" ]]; then
+                if [[ -z "$remote_digest" ]]; then
+                    echo "无法获取远端 digest，沿用缓存，跳过镜像 $old_line"
+                    continue
+                fi
+                if [[ "$cached_digest" == "$remote_digest" ]]; then
+                    echo "镜像未变化，跳过镜像 $old_line"
+                    continue
+                fi
+                echo "镜像 $old_line 有更新 ($cached_digest -> $remote_digest)，重新pull..."
+            else
+                echo "镜像 $old_line 未缓存，开始pull..."
+            fi
+
             echo "docker pull $line"
             # pull 失败则记录并跳过该镜像，继续处理下一个
             if ! docker pull $line; then
@@ -202,9 +220,9 @@ jobs:
                 docker rmi $new_image || true
                 continue
             fi
-            # 成功添加
-            pushed_images+=",$old_line"
-            echo pushed_image= $pushed_images
+            # 成功后更新缓存（拿不到 digest 时记为 unknown，下次有 digest 时会重新同步一次）
+            cache_map["$old_line"]="${remote_digest:-unknown}"
+            echo "已推送并写入缓存: $old_line"
             echo "开始清理磁盘空间"
             echo "=============================================================================="
             df -hT
@@ -218,11 +236,15 @@ jobs:
             
         done < images.txt
         
-        # 添加pushed
-        delimiter=","
-        echo $pushed_images | awk -F"$delimiter" '{for(i=1; i<=NF; i++) print $i}' >> $CACHE_FILE 
+        # 重写缓存文件：只保留 images.txt 中仍存在的条目，排序以避免无意义的 diff
+        : > "$CACHE_FILE"
+        for k in "${!cache_map[@]}"; do
+            if [[ -n "${active_images[$k]}" ]]; then
+                echo "${cache_map[$k]} $k"
+            fi
+        done | LC_ALL=C sort >> "$CACHE_FILE"
 
-        # 汇总失败的镜像（失败的不会写入缓存，下次运行会自动重试）
+        # 汇总失败的镜像（失败的不会更新缓存，下次运行会自动重试）
         if [ ${#failed_images[@]} -gt 0 ]; then
             echo "以下镜像处理失败，已跳过："
             printf '  %s\n' "${failed_images[@]}"
