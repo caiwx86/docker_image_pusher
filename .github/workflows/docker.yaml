@@ -66,6 +66,8 @@ jobs:
         declare -A duplicate_images
         declare -A temp_map
         declare -A pushed_images 
+        # 记录拉取/推送失败而被跳过的镜像
+        failed_images=()
         # 创建cache文件夹
         DATE=$(TZ="Asia/Shanghai" date +"%Y-%m-%d")
         echo DATE=$DATE
@@ -145,7 +147,12 @@ jobs:
                line=${line//--name=$rename/}
             fi
             echo "docker pull $line"
-            docker pull $line
+            # pull 失败则记录并跳过该镜像，继续处理下一个
+            if ! docker pull $line; then
+                echo "::warning::拉取失败，跳过镜像: $old_line"
+                failed_images+=("$old_line")
+                continue
+            fi
             platform=$(echo "$line" | awk -F'--platform[ =]' '{if (NF>1) print $2}' | awk '{print $1}')
             echo "platform is $platform"
             # 如果存在架构信息 将架构信息拼到镜像名称前面
@@ -187,7 +194,14 @@ jobs:
             echo "docker tag $image $new_image"
             docker tag $image $new_image
             echo "docker push $new_image"
-            docker push $new_image
+            # push 失败则清理本地镜像、记录并跳过，继续处理下一个
+            if ! docker push $new_image; then
+                echo "::warning::推送失败，跳过镜像: $old_line"
+                failed_images+=("$old_line")
+                docker rmi $image || true
+                docker rmi $new_image || true
+                continue
+            fi
             # 成功添加
             pushed_images+=",$old_line"
             echo pushed_image= $pushed_images
@@ -195,8 +209,8 @@ jobs:
             echo "=============================================================================="
             df -hT
             echo "=============================================================================="
-            docker rmi $image
-            docker rmi $new_image
+            docker rmi $image || true
+            docker rmi $new_image || true
             echo "磁盘空间清理完毕"
             echo "=============================================================================="
             df -hT
@@ -207,6 +221,12 @@ jobs:
         # 添加pushed
         delimiter=","
         echo $pushed_images | awk -F"$delimiter" '{for(i=1; i<=NF; i++) print $i}' >> $CACHE_FILE 
+
+        # 汇总失败的镜像（失败的不会写入缓存，下次运行会自动重试）
+        if [ ${#failed_images[@]} -gt 0 ]; then
+            echo "以下镜像处理失败，已跳过："
+            printf '  %s\n' "${failed_images[@]}"
+        fi
 
     - name: Commit
       uses: EndBug/add-and-commit@v9
