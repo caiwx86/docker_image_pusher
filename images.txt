@@ -9,6 +9,7 @@ lscr.io/linuxserver/chrome:latest
 l429609201/misaka_danmu_server:latest
 demoshang/siyuan:latest
 vabene1111/recipes
+lkw199711/smanga:latest
 wushuo894/ani-rss
 neosmemo/memos:stable
 caiwx0806/netease-music-dl:latest
