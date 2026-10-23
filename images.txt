@@ -1,4 +1,5 @@
 ollama/ollama
+ghcr.io/gethomepage/homepage:latest
 evanqu/jellyfin-library-poster
 ghcr.io/sysadminsmedia/homebox:latest
 openlistteam/openlist:latest
