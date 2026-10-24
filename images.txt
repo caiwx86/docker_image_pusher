@@ -54,6 +54,7 @@ gotson/komga
 linuxserver/jellyfin
 jxxghp/moviepilot:latest
 jxxghp/moviepilot-v2
+jxxghp/moviepilot-v3
 xhofe/alist
 tecnativa/docker-socket-proxy
 lscr.io/linuxserver/transmission
